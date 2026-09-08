@@ -1,0 +1,313 @@
+/* INMARA Marketing Website — Mobile Responsive & Danfo Yellow Theme */
+:root {
+  --bg-dark: #FFFFFF;
+  --bg-card: #F7F7F2;
+  --bg-card-hover: #EFEFE8;
+  --bg-glass: rgba(255, 255, 255, 0.95);
+  
+  --border-subtle: rgba(14, 14, 16, 0.1);
+  --border-glow: rgba(245, 183, 0, 0.5);
+  
+  --yellow: #F5B700;
+  --black: #0E0E10;
+  --gray: #6B6B70;
+  --success: #1E9463;
+  --error: #D5333A;
+  
+  --cyan: #F5B700;
+  --blue: #0E0E10;
+  --purple: #F5B700;
+  --pink: #F5B700;
+  --emerald: #1E9463;
+  --amber: #F5B700;
+  
+  --font-syne: 'Syne', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --text-main: #0E0E10;
+  --text-muted: #6B6B70;
+}
+
+/* Dark Mode Overrides */
+.dark-theme {
+  --bg-dark: #090D14;
+  --bg-card: #121824;
+  --bg-card-hover: #1A2336;
+  --bg-glass: rgba(18, 24, 38, 0.85);
+  
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(245, 183, 0, 0.4);
+  
+  --black: #F8FAFC;
+  --gray: #94A3B8;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Background Canvas */
+.canvas-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content-layer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Glowing Typography */
+.syne-title {
+  font-family: var(--font-syne);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+}
+
+.gradient-text-cyan {
+  background: linear-gradient(135deg, var(--text-main) 0%, #F5B700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-gold {
+  background: #F5B700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-emerald {
+  background: #1E9463;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(14, 14, 16, 0.05);
+}
+
+.glass-panel-interactive {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(14, 14, 16, 0.04);
+}
+
+.glass-panel-interactive:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: #F5B700;
+  box-shadow: 0 20px 40px rgba(14, 14, 16, 0.1), 0 0 30px rgba(245, 183, 0, 0.25);
+  background: var(--bg-card-hover);
+}
+
+/* Section Wrapper */
+.landing-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+  position: relative;
+}
+
+/* Glowing Buttons */
+.btn-glow-primary {
+  padding: 1rem 2.25rem;
+  border-radius: 9999px;
+  background: #F5B700;
+  color: #0E0E10;
+  font-weight: 800;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 20px rgba(245, 183, 0, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  min-height: 48px;
+}
+
+.btn-glow-primary:hover {
+  background: var(--text-main);
+  color: #F5B700;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(14, 14, 16, 0.25);
+}
+
+.btn-outline-glow {
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(14, 14, 16, 0.05);
+  min-height: 48px;
+}
+
+.btn-outline-glow:hover {
+  background: #F5B700;
+  border-color: #F5B700;
+  color: #0E0E10;
+  transform: translateY(-2px);
+}
+
+/* Mobile Navigation Hamburger Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-dark);
+  z-index: 1000;
+  padding: 6rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* Desktop Nav: hidden on mobile, visible on larger screens */
+.desktop-nav-actions {
+  display: flex;
+}
+
+/* Mobile Hamburger Button: hidden on desktop, visible on mobile */
+.mobile-hamburger-btn {
+  display: none;
+}
+
+/* Problem-Solution comparison grid: 2-col on desktop, 1-col on mobile */
+.problem-solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* Large Tablets (< 1024px) */
+@media (max-width: 1024px) {
+  .landing-section {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* Tablets (< 900px) */
+@media (max-width: 900px) {
+  .landing-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .problem-solution-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Smartphones (< 768px) */
+@media (max-width: 768px) {
+  /* Typography scaling */
+  .syne-title {
+    font-size: clamp(1.6rem, 5vw, 2.25rem) !important;
+    letter-spacing: -0.02em;
+  }
+
+  /* Sections */
+  .landing-section {
+    padding: 3.5rem 1rem;
+  }
+
+  /* Desktop nav items (links, launch button) hidden on mobile */
+  .desktop-nav-actions {
+    display: none !important;
+  }
+
+  /* Hamburger menu button shown on mobile */
+  .mobile-hamburger-btn {
+    display: flex !important;
+  }
+
+  /* Problem/solution cards */
+  .problem-solution-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .problem-card,
+  .solution-card {
+    padding: 1.5rem !important;
+  }
+
+  /* Buttons: full width on small screens */
+  .btn-glow-primary,
+  .btn-outline-glow {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0.9rem 1.5rem;
+  }
+
+  /* Glass panel padding reduction */
+  .glass-panel {
+    border-radius: 16px;
+  }
+}
+
+/* Extra Small Phones (< 480px) */
+@media (max-width: 480px) {
+  .landing-section {
+    padding: 2.5rem 0.85rem;
+  }
+
+  .syne-title {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
