@@ -73,13 +73,13 @@ export default function PillarsShowcase() {
     <section id="pillars" className="landing-section">
       <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto 4rem' }}>
         <span style={{ color: 'var(--cyan)', fontWeight: 600, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-          What INMARA Brings Together
+          What NearVia Brings Together
         </span>
         <h2 className="syne-title" style={{ fontSize: '2.5rem', marginTop: '0.5rem', marginBottom: '1rem' }}>
           The <span className="gradient-text-cyan">8 Ecosystem Pillars</span>
         </h2>
         <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)' }}>
-          INMARA goes far beyond a traditional online shop. It consolidates every dimension of local discovery under one intuitive interface.
+          NearVia goes far beyond a traditional online shop. It consolidates every dimension of local discovery under one intuitive interface.
         </p>
       </div>
 

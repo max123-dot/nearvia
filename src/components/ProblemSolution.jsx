@@ -6,7 +6,7 @@ export default function ProblemSolution() {
     <section id="concept" className="landing-section">
       <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto 4rem' }}>
         <h2 className="syne-title" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '1rem' }}>
-          The User Problem & <span className="gradient-text-cyan">The INMARA Solution</span>
+          The User Problem & <span className="gradient-text-cyan">The NearVia Solution</span>
         </h2>
         <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)' }}>
           People often know exactly what they need, but have no way of knowing what is available nearby, who provides it, how far away it is, what it costs, or whether others recommend it.
@@ -38,11 +38,11 @@ export default function ProblemSolution() {
           </ul>
         </div>
 
-        {/* The INMARA Ecosystem */}
+        {/* The NearVia Ecosystem */}
         <div className="glass-panel solution-card" style={{ padding: '2.5rem', border: '1px solid rgba(245, 183, 0, 0.4)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <CheckCircle2 size={26} color="#F5B700" />
-            <h3 style={{ fontSize: '1.3rem', color: 'var(--text-main)' }}>The INMARA Discovery Gateway</h3>
+            <h3 style={{ fontSize: '1.3rem', color: 'var(--text-main)' }}>The NearVia Discovery Gateway</h3>
           </div>
 
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1.25rem', color: 'var(--text-muted)' }}>

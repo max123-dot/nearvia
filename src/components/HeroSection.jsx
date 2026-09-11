@@ -62,7 +62,7 @@ export default function HeroSection() {
           </h1>
 
           <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: '600px', marginBottom: '2rem', lineHeight: 1.6 }}>
-            INMARA is a location-focused discovery platform connecting people with everything around them: <strong style={{ color: 'var(--text-main)' }}>products, services, dining, beauty, stays, and entertainment</strong> — all from one central portal.
+            NearVia is a location-focused discovery platform connecting people with everything around them: <strong style={{ color: 'var(--text-main)' }}>products, services, dining, beauty, stays, and entertainment</strong> — all from one central portal.
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginBottom: '2.5rem' }}>

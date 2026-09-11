@@ -33,7 +33,7 @@ export default function HowItWorksSection() {
           Simplified Local Access
         </span>
         <h2 className="syne-title" style={{ fontSize: '2.5rem', marginTop: '0.5rem', marginBottom: '1rem' }}>
-          How <span className="gradient-text-cyan">INMARA Works</span>
+          How <span className="gradient-text-cyan">NearVia Works</span>
         </h2>
         <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)' }}>
           From asking *"What can I find around me right now?"* to completing a local action in under 60 seconds.

@@ -1,0 +1,26 @@
+{
+  "short_name": "NearVia",
+  "name": "NearVia — Local Discovery Ecosystem",
+  "description": "Next-generation location-focused local discovery ecosystem. Find products, services, local businesses, dining, beauty, stays, and entertainment.",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090D14",
+  "theme_color": "#F5B700",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["lifestyle", "shopping", "navigation", "business"]
+}

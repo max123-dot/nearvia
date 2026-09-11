@@ -17,7 +17,7 @@ export default function FooterCTA({ theme }) {
 
           <a href="http://localhost:3002" target="_blank" rel="noopener noreferrer" className="btn-glow-primary">
             <Compass size={20} />
-            <span>Launch INMARA Platform Now</span>
+            <span>Launch NearVia Platform Now</span>
             <ExternalLink size={18} />
           </a>
         </div>
@@ -25,14 +25,14 @@ export default function FooterCTA({ theme }) {
         {/* Footer Brand Credit */}
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1.5rem', borderTop: '1px solid var(--border-subtle)', paddingTop: '2rem' }}>
           <div>
-            <img src={theme === 'light' ? '/light-mode-logo.png' : '/dark-mode-logo.png'} alt="INMARA" style={{ height: '32px', width: 'auto', objectFit: 'contain' }} />
+            <img src={theme === 'light' ? '/light-mode-logo.png' : '/dark-mode-logo.png'} alt="NearVia" style={{ height: '32px', width: 'auto', objectFit: 'contain' }} />
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
               Making the world around every person easier to discover, understand, and access.
             </p>
           </div>
 
           <div style={{ fontSize: '0.825rem', color: 'var(--text-muted)', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '0.3rem', textAlign: 'center' }}>
-            Crafted with <Heart size={14} color="var(--pink)" fill="var(--pink)" /> for local communities &bull; &copy; {new Date().getFullYear()} INMARA Ecosystem
+            Crafted with <Heart size={14} color="var(--pink)" fill="var(--pink)" /> for local communities &bull; &copy; {new Date().getFullYear()} NearVia Ecosystem
           </div>
         </div>
 

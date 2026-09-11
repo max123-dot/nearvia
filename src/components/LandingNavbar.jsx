@@ -23,7 +23,7 @@ export default function LandingNavbar({ theme, onToggleTheme }) {
           <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', textDecoration: 'none' }}>
             <img 
               src={theme === 'light' ? '/light-mode-logo.png' : '/dark-mode-logo.png'} 
-              alt="INMARA" 
+              alt="NearVia" 
               style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
             />
             <span style={{ fontSize: '0.65rem', background: '#F5B700', color: '#0E0E10', padding: '0.15rem 0.5rem', borderRadius: '999px', fontWeight: 700 }}>

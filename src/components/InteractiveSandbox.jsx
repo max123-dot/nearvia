@@ -30,7 +30,7 @@ export default function InteractiveSandbox() {
             <span>INTERACTIVE PLATFORM SIMULATOR</span>
           </div>
           <h2 className="syne-title" style={{ fontSize: '2.25rem', marginBottom: '0.75rem' }}>
-            Test <span className="gradient-text-cyan">INMARA Proximity Engine</span>
+            Test <span className="gradient-text-cyan">NearVia Proximity Engine</span>
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.975rem' }}>
             Try searching for products, food, barbers, bike repair, or stays in our live sandbox preview.

@@ -11,7 +11,7 @@ export default function DualPerspective() {
           Designed for <span className="gradient-text-cyan">Everyone in the Community</span>
         </h2>
         <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)' }}>
-          INMARA creates a mutually beneficial feedback loop connecting local consumers with nearby creators and service providers.
+          NearVia creates a mutually beneficial feedback loop connecting local consumers with nearby creators and service providers.
         </p>
 
         {/* Tab Selector */}
